@@ -56,6 +56,10 @@ Arcane saves your project definitions (files, and `.env` files) in its data dire
 
 Arcane allows you to sync your projects directly from a Git repository.
 
+To set this up, a common pattern is to bootstrap an arcane agent so that you have an empty arcane environment / project.
+
+Once this is deployed, you can then pull from a Git repository into Arcane: note that the sync is one way only, so updates to your compose.yaml file needs to then be performed outside of Arcane.
+
 ### Connecting a Repository
 
 Before you can sync a project, you need to add a Git repository to Arcane.
